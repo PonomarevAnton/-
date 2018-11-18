@@ -1,0 +1,35 @@
+print('Добро пожаловть в убер-калькулятор!')
+print('Руководство пользователя:')
+print('Для получения ответа в начале необходимо вписать первый множитель,')
+print('после вписать одну из представленных ниже команд для счета:')
+print('+ - сумма')
+print(' - - разность')
+print('* - произведение')
+print('/ - частное')
+print('*= - возведение в степень')
+print('1/ - корень числа')
+print('+- - НОД,')
+print('наконец вписать второй множитель и нажать Enter')
+
+a= int(input())
+b= input()
+c= int(input())
+
+if b == '+':
+	print(a + c);
+if b == '-':
+	print(a - c);
+if b == '*':
+	print(a * c);
+if b == '/' and c == 0:
+	print('https://www.youtube.com/watch?v=y3Wpt2KuxpM')
+elif b == '/' and c != 0:
+	print(a / c);
+if b == '*=':
+	print(a ** c);
+if b == '1/':
+    print(a ** (1/c))
+if b =='+-':
+    while c != 0:
+        a,c = c, a%c
+    print(a)
